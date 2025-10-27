@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/d25e2793dc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!------------------------------------------------------# Home Page Here #------------------------------------------------------------>
+  <div id="header">
+<div class="container">
+    <nav class="nav">
+      <div class="nav-logo">
+        <img src="images/nmlogo.webp" alt="logo" class="logo"><h1>Naveen.</h1>
+      </div>
+        
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">ContactUs</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+      <p>  .Net Application Developer </p>
+      <h1>Hi,I'm <span>Naveen</span> <br> Mamidi</h1>
+    </div>
+  </div>
+</div>   
+
+<!---------------------------------------------------# ABout Page Starts Here #------------------------------------------------------------>
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/Naveen Photo_1.jpg" alt="userpic">
+      </div>
+      
+      <div class="about-col-2">
+        <div class="social-icons btn-icon">
+          <a href="#header"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <h1 class="sub-title">About Me</h1>
+        <p>Hi This is Naveen Mamidi, I'm a .Net Application Developer With Experince of 1year.
+           I Have Worked on MVC,Front-End Like HTML,CSS,JavaScript,JQuery in Multiple Applications
+           I have Worked On 4 RealTime Applications.
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links  active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+          <p class="tab-links" onclick="opentab('personal')">Personal</p>
+        </div>
+        <div class="tab-contents  active-tab" id="skills">
+          <ul>
+            <li><span>UI/UX</span><br>Designing Web/App Interfaces Using HTML,CSS,JS,JQuery.</li>
+            <li><span>Web Development</span><br>Web Application Development.</li>
+            <li><span>DevOps</span><br>AWS Linux DevOps.</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2023-2021</span><br>Application Developer in Fint Solutions Pvt Lmt.</li>
+            <li><span>2021-2020</span><br>Intern as Associate Developer in Satya Tech.</li>
+            
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2026</span><br>Post Graduate In Masters in Computer Science from WESTCLIFF University.</li>
+            <li><span>2021</span><br>Post Graduate In Masters Of Computer Application from ANU University.</li>
+            <li><span>2019</span><br>Gradute in Bachelor Of Computer Science from JKC College.</li>
+            <li><span>2016</span><br>Intermeditae</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="personal">
+          <ul>
+            <li><span>Date Of Birth</span><br>xxxx</li>
+            <li><span>Nationality</span><br>Indian</li>
+            <li><span>Contact Info</span><br>XXXXXXXXXX</li>
+            <li><span>Address</span><br>Los Angels, CALIFORNIA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+<!----------------------------------------------------------------# Services Page Here #----------------------------------------------------------->
+<div id="services">
+  <div class="container">
+    <div class="social-icons btn-icon">
+      <a href="#header"><i class="fa-solid fa-house"></i></a>
+    </div>
+    <h1 class="sub-title">My Services </h1>
+    
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-crop"></i>
+        <h2>UI/UX</h2>
+        <p>We Provide the Best Customer Satisfied Designs By Using HTML,CSS,JS,JQuery </p>
+        <a href="https://www.tutorialrepublic.com/" target="_blank">Learn More</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Applications</h2>
+        <p>we work with .Net Core,Microservices,Restful API's</p>
+        <a href="https://www.tutorialsteacher.com/" target="_blank">Learn More</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store"></i>
+        <h2>App Designing</h2>
+        <p>We Use ReactJs & Angular Frame Works for Application Designing</p>
+        <a href="https://www.tutorialsteacher.com/angular" target="_blank">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----------------------------------------------------# Portfolio Page Here #--------------------------------------------------------------->
+<div id="portfolio">
+  <div class="container">
+    <div class="social-icons btn-icon">
+      <a href="#header"><i class="fa-solid fa-house"></i></a>
+    </div>
+    <h1 class="sub-title">My Work</h1>
+    
+    <div class="work-list">
+      <div class="work">
+        <img src="images/maclap.jpg" alt="maclaptop">
+        <div class="layer">
+          <h3>Global Remittance</h3>
+          <p>An East West Bank's Application For Money Transfer 
+            from One Country Region to the Another CountryRegion</p>
+            <a href="https://www.eastwestbank.com/en" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work active-wrk">
+        <img src="images/work-1.png" alt="maclaptop">
+        <div class="layer">
+          <h3>MERN STACK PROJECTS </h3>
+          <p>Learned While doing Frontend,Backend & Full stack core courses</p>
+          <a href="https://github.com/NMB206688"><i class="fa-solid fa-microscope"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/emplap.jpg" alt="maclaptop">
+        <div class="layer">
+          <h3>Designing</h3>
+          <p>Designing Responsive Web Pages By Using HTML,CSS,Bootstrap,JS.</p>
+          <a href="https://github.com/NMB206688/PORTFOLIO-PROJECT"><i class="fa-regular fa-object-group"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+
+<!---------------------------------------------------------# Contact Page Here #---------------------------------------------------------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title"><i class="fa-sharp fa-solid fa-id-card"></i>Contact</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>n.XXXX.247@WESTCLIFF.EDU</p>
+        <p><i class="fa-solid fa-mobile-screen-button"></i>+1 562 xxx xxx1</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+       
+        <a href="Images/my-cv.pdf" download Class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <div class="social-icons btn-icon">
+          <a href="#header"><i class="fa-solid fa-house"></i></a>
+        </div>
+         <form name="myForm" onsubmit="return validateForm()" >
+           <input type="text" name="name" placeholder="Enter Your Name " >
+           <input type="email" name="email" placeholder="Enter Your Mail" >
+           <textarea name="message" rows="6"  placeholder="Enter Your Message"></textarea>
+           <button type="submit" class="btn btn2">Submit</button>
+         </form>
+        </div>
+    </div>
+  </div>
+  <!-----------------------------------------------------# Footer Page Here #------------------------------------------------------------->
+  <div class="copyright">
+    <p>Copyright  <i class="fa-sharp fa-solid fa-copyright"></i> by  Naveen Mamidi   <i class="fa-sharp fa-solid fa-face-smile"></i>   2026</p>
+  </div>
+</div>
+
+
+<script src="./Javascript.js"></script>
+</body>
+</html>
